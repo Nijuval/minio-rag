@@ -1,0 +1,13 @@
+# Retrieval-Augmented Generation (RAG)
+
+Retrieval-Augmented Generation combines information retrieval with a language model to answer questions using external documents.
+
+A typical RAG pipeline has four main stages: document ingestion, text chunking, embedding generation, and retrieval.
+
+During document ingestion, files are loaded and stored for processing. Text chunking splits long documents into smaller pieces. An embedding model converts each text chunk into a numerical vector. Qdrant stores these vectors and supports similarity search.
+
+MinIO provides object storage for documents. FastAPI exposes API endpoints for ingestion, retrieval, and question answering. Ollama runs the local language models used for embeddings and answer generation.
+
+When a user asks a question, the system converts the question into an embedding, retrieves relevant document chunks from Qdrant, and sends the retrieved information to the language model. The language model generates an answer grounded in the retrieved documents.
+
+This architecture is useful for searching technical documentation, internal knowledge bases, and collections of PDF or text files.

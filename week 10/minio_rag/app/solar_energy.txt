@@ -1,0 +1,3 @@
+Solar Energy
+
+Solar panels convert sunlight into electricity using photovoltaic cells. The amount of electricity produced depends on sunlight intensity, panel efficiency, shading, and panel orientation. Solar batteries can store excess electricity for later use. Solar energy is renewable because sunlight is naturally replenished.
